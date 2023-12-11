@@ -48,7 +48,7 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="items-center justify-between md:flex flex-wrap">
+                    <div class="items-center justify-between flex sm:flex-wrap">
                         <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
@@ -97,7 +97,7 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="items-center justify-between md:flex flex-wrap">
+                    <div class="items-center justify-between flex sm:flex-wrap">
                         <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
@@ -146,7 +146,7 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="items-center justify-between md:flex flex-wrap">
+                    <div class="items-center justify-between flex sm:flex-wrap">
                         <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
@@ -195,7 +195,7 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="items-center justify-between md:flex flex-wrap">
+                    <div class="items-center justify-between flex sm:flex-wrap">
                         <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
