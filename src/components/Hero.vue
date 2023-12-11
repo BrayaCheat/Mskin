@@ -1,6 +1,6 @@
 <template>
     <section id="hero">
-        <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 place-items-center md:p-36 p-10 md:gap-0 gap-10">
+        <div class="container mx-auto grid xl:grid-cols-2 lg:grid-cols-1  md:grid-cols-1 grid-cols-1 place-items-center md:p-36 p-10 md:gap-10 gap-10">
             <div class="title flex flex-col gap-10">
                 <h1 class="text-5xl font-bold text-black">JSON and XML Weather API and Geolocation Developer API</h1>
                 <h1 class="text-lg font-medium text-zinc-500">Ultimately, what makes a "good product" is subjective and

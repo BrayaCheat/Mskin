@@ -1,11 +1,11 @@
 <template>
     <section id="about" class="bg-gray-50">
-        <div class="flex flex-col justify-center items-center gap-6 pt-20 md:px-0 px-10 md:text-justify text-center">
+        <div class="flex flex-col justify-center items-center xl:px-0 px-10 gap-10 sm:py-0 pt-10 text-center">
             <h1 class="text-black font-bold text-4xl">Real Time, Forecasted, Future, Marine and Historical Weather</h1>
             <h1 class="text-zinc-500 font-medium text-xl">Free Weather Forecast in JSON and XML for commercial and
                 non-commercial use</h1>
         </div>
-        <div class="container mx-auto md:p-36 p-10 grid md:grid-cols-3 grid-cols-1 place-items-center gap-12">
+        <div class="container mx-auto md:p-36 p-10 grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 grid-cols-1 place-items-center gap-12">
             <div class="max-w-sm p-6 rounded-lg shadow-lg border-zinc-200 border">
                 <img src="../assets/Images/about.jpg" alt="" class="w-full rounded-full p-10">
                 <a href="#">

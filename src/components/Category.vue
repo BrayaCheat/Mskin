@@ -1,11 +1,12 @@
 <template>
     <section id="about" class="bg-gray-50">
-        <div class="flex flex-col justify-center items-center gap-6 pt-20 md:px-0 px-10 md:text-justify text-center">
+        <div class="flex flex-col justify-center items-center xl:px-0 px-10 gap-6 sm:py-0 py-10 text-center">
             <h1 class="text-black font-bold text-4xl">Real Time, Forecasted, Future, Marine and Historical Weather</h1>
             <h1 class="text-zinc-500 font-medium text-xl">Free Weather Forecast in JSON and XML for commercial and
                 non-commercial use</h1>
         </div>
-        <div class="container mx-auto md:p-36 p-10 grid md:grid-cols-4 grid-cols-1 place-items-center gap-12">
+        <div
+            class="container mx-auto md:p-36 p-10 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 place-items-center gap-12">
             <div
                 class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
                 <a href="#">
@@ -47,8 +48,8 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-gray-900">$599</span>
+                    <div class="items-center justify-between md:flex flex-wrap">
+                        <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
                             to cart</a>
@@ -96,8 +97,8 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-gray-900">$599</span>
+                    <div class="items-center justify-between md:flex flex-wrap">
+                        <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
                             to cart</a>
@@ -145,8 +146,8 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-gray-900">$599</span>
+                    <div class="items-center justify-between md:flex flex-wrap">
+                        <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
                             to cart</a>
@@ -194,8 +195,8 @@
                         <span
                             class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3xl font-bold text-gray-900">$599</span>
+                    <div class="items-center justify-between md:flex flex-wrap">
+                        <span class="text-3xl font-bold text-gray-900 lg:gap-0 gap-10">$599</span>
                         <a href="#"
                             class="text-white bg-pink-400 hover:bg-pink-500 duration-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add
                             to cart</a>
