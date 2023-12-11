@@ -58,35 +58,13 @@
                 </a>
             </div>
         </div>
-        <div class="container mx-auto md:px-36 p-10 grid md:grid-cols-2 grid-cols-1 gap-12">
-            <div class="grid place-items-center" v-for="(img, index) in images" :key="img.id">
-                <img v-if="img.show" :src="img.src" :alt="img.alt" class="rounded-lg w-full h-96 object-cover shadow-md duration-500" data-aos-duration="2000">
-                <button v-if="!img.show" @click="showImages(index)" class="px-10 py-4 w-full bg-pink-300 rounded text-white hover:bg-pink-400 duration-500 shadow-md">
-                    1. Click the button to see the images
-                </button>
-            </div>
-        </div>
+        
     </section>
 </template>
 
 <script>
 export default {
     name: 'About',
-    data() {
-        return {
-            images: [
-                { id: 1, src: 'src/assets/Images/img1.jpg', alt: 'img1', show: true, title: "1. Click the button to see the images" },
-                { id: 2, src: 'src/assets/Images/img2.jpg', alt: 'img2', show: false, title: "2. Click the button to see the images" },
-            ]
-        }
-    },
-    methods: {
-        showImages: function(index) {
-            this.images = this.images.map((img, imgIndex) => {
-                img.show = imgIndex == index;
-                return img;
-            })
-        }
-    }
+    
 }
 </script>

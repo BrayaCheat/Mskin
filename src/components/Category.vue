@@ -6,7 +6,8 @@
                 non-commercial use</h1>
         </div>
         <div class="container mx-auto md:p-36 p-10 grid md:grid-cols-4 grid-cols-1 place-items-center gap-12">
-            <div class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
+            <div
+                class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
                 <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/Images/apple-watch.png" alt="product image" />
                 </a>
@@ -54,7 +55,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
+            <div
+                class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
                 <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/Images/apple-watch.png" alt="product image" />
                 </a>
@@ -102,7 +104,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
+            <div
+                class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
                 <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/Images/apple-watch.png" alt="product image" />
                 </a>
@@ -150,7 +153,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
+            <div
+                class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
                 <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/Images/apple-watch.png" alt="product image" />
                 </a>
@@ -202,6 +206,19 @@
         <div class="flex justify-center items-center pb-20">
             <a href=""><span class="text-pink-400 font-medium text-xl underline">View all categories</span></a>
         </div>
+        <div class="container mx-auto md:px-36 p-10 grid md:grid-cols-2 grid-cols-1 gap-12" v-for="(img, index) in images"
+            :key="img.id">
+            <div>
+                <img v-if="img.show" :src="img.src" :alt="img.alt"
+                    class="rounded-lg w-full h-96 object-cover shadow-md duration-500" data-aos-duration="2000">
+            </div>
+            <div>
+                <button @click="showImages(index)"
+                    class="px-10 py-4 w-full bg-pink-300 rounded text-white hover:bg-pink-400 duration-500 shadow-md">
+                    {{ img.title }}
+                </button>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -209,6 +226,18 @@
 export default {
     data() {
         return {
+            images: [
+                { id: 1, src: 'src/assets/Images/img1.jpg', alt: 'img1', show: true, title: "1. Skin care" },
+                { id: 2, src: 'src/assets/Images/img2.jpg', alt: 'img2', show: false, title: "2. Sunscream" },
+            ]
+        }
+    },
+    methods: {
+        showImages: function (index) {
+            this.images = this.images.map((img, imgIndex) => {
+                img.show = imgIndex == index;
+                return img;
+            })
         }
     }
 }
