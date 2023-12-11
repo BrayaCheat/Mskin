@@ -227,8 +227,8 @@ export default {
     data() {
         return {
             images: [
-                { id: 1, src: '../assets/Images/img1.jpg', alt: 'img1', show: true, title: "1. Skin care" },
-                { id: 2, src: '../assets/Images/img2.jpg', alt: 'img2', show: false, title: "2. Sunscream" },
+                { id: 1, src: '/assets/Images/img1.jpg', alt: 'img1', show: true, title: "1. Skin care" },
+                { id: 2, src: '/assets/Images/img2.jpg', alt: 'img2', show: false, title: "2. Sunscream" },
             ]
         }
     },
