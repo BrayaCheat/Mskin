@@ -1,14 +1,15 @@
 <template>
-    <section id="about" class="bg-gray-50">
-        <div class="flex flex-col justify-center items-center xl:px-0 px-10 gap-6 sm:py-0 py-10 text-center">
+    <section id="about">
+        
+        <div
+            class="container mx-auto md:p-36 p-10 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 place-items-center gap-12">
+            <div class="grid col-span-4 xl:px-0 px-10 gap-6 sm:py-0 text-center">
             <h1 class="text-black font-bold text-4xl">Real Time, Forecasted, Future, Marine and Historical Weather</h1>
             <h1 class="text-zinc-500 font-medium text-xl">Free Weather Forecast in JSON and XML for commercial and
                 non-commercial use</h1>
         </div>
-        <div
-            class="container mx-auto md:p-36 p-10 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 place-items-center gap-12">
             <div
-                class="w-full max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
+                class="w-fit max-w-sm bg-white rounded-lg shadow-lg hover:border-pink-400 duration-500 border-zinc-200 border">
                 <a href="#">
                     <img class="p-8 rounded-t-lg" src="../assets/Images/apple-watch.png" alt="product image" />
                 </a>
@@ -202,24 +203,12 @@
                             to cart</a>
                     </div>
                 </div>
+            </div>
+            <div class="grid col-span-4 place-items-center pt-10">
+                <button class="border-2 border-pink-400 text-black rounded-lg px-8 py-2 font-medium hover:bg-pink-400 hover:text-white duration-500">Get Started</button>
             </div>
         </div>
-        <div class="flex justify-center items-center pb-20">
-            <a href=""><span class="text-pink-400 font-medium text-xl underline">View all categories</span></a>
-        </div>
-        <div class="container mx-auto md:px-36 p-10 grid md:grid-cols-2 grid-cols-1 gap-12" v-for="(img, index) in images"
-            :key="img.id">
-            <div>
-                <img v-if="img.show" :src="img.src" :alt="img.alt"
-                    class="rounded-lg w-full h-96 object-cover shadow-md duration-500" data-aos-duration="2000">
-            </div>
-            <div>
-                <button @click="showImages(index)"
-                    class="px-10 py-4 w-full bg-pink-300 rounded text-white hover:bg-pink-400 duration-500 shadow-md">
-                    {{ img.title }}
-                </button>
-            </div>
-        </div>
+        
     </section>
 </template>
 
@@ -227,21 +216,12 @@
 export default {
     data() {
         return {
-            images: [
-                { id: 1, src: '../assets/Images/apple-watch.png', alt: 'img1', show: true, title: "1. Skin care" },
-                { id: 2, src: '/assets/img2.jpg', alt: 'img2', show: false, title: "2. Sunscream" },
-            ]
+            
         }
     },
     methods: {
-        showImages: function (index) {
-            this.images = this.images.map((img, imgIndex) => {
-                img.show = imgIndex == index;
-                return img;
-            })
-        }
-    }
+       
+    },
 }
 </script>
 
-<style lang="scss" scoped></style>
