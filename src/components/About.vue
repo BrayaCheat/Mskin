@@ -8,7 +8,7 @@
                 <h1 class="text-zinc-500 font-medium text-xl">Free Weather Forecast in JSON and XML for commercial and
                     non-commercial use</h1>
             </div>
-            <div class="grid col-span-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 place-items-center gap-10">
+            <div class="grid col-span-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 place-items-center gap-10">
                 <div class="max-w-sm p-6 rounded-lg shadow-lg border-zinc-200 border">
                 <img src="../assets/Images/about.jpg" alt="" class="w-full rounded-full p-10">
                 <h1 class="font-medium text-xl">1. SKINCARE</h1>
@@ -73,7 +73,7 @@
 
 
         <div class="container mx-auto lg:px-36 md:px-28 p-10 grid md:grid-cols-3 grid-cols-1 gap-12">
-            <div class="relative md:col-span-2">
+            <div class="relative">
                 <img v-for="img in images" :key="img.src" :src="img.src" :alt="img.alt" id="img"
                     class="img-animate transition-opacity rounded-lg object-cover shadow-md duration-500 border border-zinc-200"
                     :class="img.active ? '' : 'opacity-0'" data-aos-duration="2000">
